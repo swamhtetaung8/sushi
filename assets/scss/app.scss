@@ -1,0 +1,190 @@
+$primary: hsl(19, 64%, 54%);
+$navbar-nav-link-padding-x: 1.5rem;
+$headings-font-family: "Lora";
+$headings-color: hsl(19, 16%, 15%);
+$font-family-sans-serif: "Poppins";
+$body-bg: hsl(19, 100%, 96%);
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    6: $spacer * 4,
+    7: $spacer * 5,
+    8: $spacer * 6,
+    9: $spacer * 7,
+);
+$input-focus-box-shadow: none;
+$input-focus-width: 0px;
+$navbar-toggler-focus-width: 0px;
+
+nav {
+    background-color: $body-bg;
+}
+
+.btn-icon img {
+    vertical-align: middle;
+}
+
+.active {
+    color: hsl(19, 64%, 54%) !important
+}
+
+.img-1 img {
+    position: absolute;
+    top: 90px;
+    opacity: 0.5;
+    width: 120px;
+    transform: rotate(90deg);
+}
+
+.img-2 img {
+    position: absolute;
+    top: 500px;
+    right: 0;
+    opacity: 0.5;
+    width: 120px;
+}
+
+.about .img-3 {
+    position: absolute;
+    width: 150px;
+    bottom: 120px;
+    transform: rotate(-20deg);
+    right: 10px;
+    opacity: 0.5;
+}
+
+.beauty-font {
+    font-family: "Dancing Script",
+        cursive;
+}
+
+.sushi-card img {
+    transform: translateY(-40px)
+}
+
+.sushi-card i {
+    position: absolute;
+    width: 40px;
+    text-align: center;
+    right: 24px;
+    bottom: 35px;
+    cursor: pointer;
+}
+
+.rotate-leaf {
+    transform: rotate(45deg);
+    width: 25px;
+}
+
+.recently .recent-bg {
+    width: 50px;
+    position: absolute;
+    bottom: 120px;
+    right: 0;
+    width: 100px;
+    transform: rotate(-35deg);
+    opacity: 0.5;
+}
+
+.dark-bg {
+    background-color: hsl(19, 16%, 15%);
+}
+
+.newsletter .news-leaf {
+    position: absolute;
+    width: 40px;
+    right: 150px;
+    transform: rotate(45deg)
+}
+
+footer {
+
+    img {
+        cursor: pointer;
+    }
+
+    i {
+        cursor: pointer;
+    }
+
+    .footer-img {
+        position: absolute;
+        bottom: -5%;
+        left: 50%;
+        width: 150px;
+        opacity: 0.5;
+        transform: rotate(-10deg);
+        z-index: -1000;
+    }
+
+    .first-row {
+        .footer-leaf1 {
+            position: absolute;
+            width: 60px;
+            top: 180px;
+            left: 150px;
+            transform: rotate(35deg);
+            z-index: -1000;
+        }
+
+        .footer-leaf2 {
+            position: absolute;
+            width: 60px;
+            right: 50px;
+            transform: rotate(-50deg);
+            top: 120px;
+            z-index: -1000;
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .img-1 img {
+        width: 60px;
+    }
+
+    .img-2 img {
+        width: 60px;
+        top: 400px;
+    }
+
+    .about .img-3 {
+        width: 60px;
+        bottom: 50px;
+    }
+
+    .recently .recent-bg {
+        width: 60px;
+        bottom: 400px;
+    }
+
+    .newsletter .news-leaf {
+        width: 30px;
+        bottom: -30px;
+        right: 70px;
+    }
+
+    footer .first-row .footer-leaf1 {
+        top: 550px;
+        left: 100px;
+    }
+
+    footer .first-row .footer-leaf2 {
+        top: 80px;
+    }
+
+    footer .footer-img {
+        left: 75%;
+    }
+}
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/animate.css/animate.min.css';
